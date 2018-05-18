@@ -1,0 +1,96 @@
+@charset "UTF-8";
+
+
+/* -------------reset---------------- */
+
+div{
+	margin :0px;	
+}
+
+p{
+	padding:0px;
+	margin : 0px;
+}
+
+body{
+	margin : 0px;
+}
+
+/* -------------reset---------------- */
+.amount{
+	width : 100%;
+	height : auto;	
+}
+
+.amount table{
+	width : 95%;
+	height : 40px;
+	margin : auto;
+}
+
+.amount-content{
+	border : 1px solid black;
+	width : 84%;
+	height : 80px;
+	
+	text-align: center;
+	vertical-align: middle;	
+}
+
+.payment-option{	
+	width : 100%;
+	height : auto;	
+	margin-bottom: 20px;
+}
+
+.payment-option tr{
+	width : 90%;
+	height : auto;
+}
+
+.payment-option td{
+	border : 1px solid #00000033;
+	width: 87%;
+	padding-right: 145px;
+	margin-left: 3px;
+}
+
+/* ---------------table 버림------------------- */
+/* .payment-option{
+	display : flex;
+	flex-direction: column;	
+	width : 98%;
+	height : auto;	
+	margin: 2px 1px 20px 1px;
+	border : 1px solid #00000033;
+} */
+
+
+.text{
+	border : 1px solid #00000033;
+	font-size: 11px;
+    letter-spacing: -1px;
+    margin : 7px 2px;
+}
+
+.payment{
+	width : 96%;
+	height : 60px;
+	margin-top : 20px;
+	margin-left : 1px;
+	border : 1px solid #00000033;
+	line-height : 20px;
+	padding: 15px 3px 3px 3px;
+}
+
+.payment-btn{
+	float :right;
+	width : 100px;
+	height : 45px;
+	align-self: center;
+}
+
+.payment p{
+	font-size: 13px;
+	font-weight : bold;	
+}

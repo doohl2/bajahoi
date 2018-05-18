@@ -1,0 +1,134 @@
+@charset "UTF-8";
+
+/* ---------------reset------------------ */
+body{
+	margin:0px;
+	background: white;
+}
+
+p{
+	margin:0px;
+	padding : 2px 5px;
+}
+
+div{
+	margin:0px;
+}
+
+form{
+
+}
+
+h4{
+	margin: 5px 2px;
+}
+
+/* ------ topmenu------------------------------------- */
+.topmenu{
+	width : 100%;
+	height : 35px;
+	margin-bottom : 1px;
+}
+
+.topmenu .title{
+	font-family : "맑은고딕", "고딕", "sans-serif";
+	font-size : 21px;
+	font-weight : bold;
+	color : #646464;
+	padding-left : 45px;	
+	background-size : 43px 34px;
+	text-decoration : none;
+	text-align :center;
+}
+
+.topmenu-img{
+	float : right;
+	width : 22px;
+	height : auto;	
+	margin : 6px 2px 0px 0px;
+}
+.topmenu-logo{
+	float : left;
+	width : 24px;
+	height : auto;
+	margin : 6px 0px 0px 6px;
+}
+
+
+/* ---------------main------------------ */
+.head{
+	width : 90%;
+	height : auto;
+	text-align: left;
+	padding : 2px 5px;
+	border-bottom: 1px solid #00000033;
+	margin : 0px 5px;
+	
+}
+
+.head-font{
+	width : 97%;
+	font-family : "맑은고딕", "굴림", sans-serif; 
+	font-size: 13px;
+	font-weight : bold;
+	color : gray;
+}
+
+.option{
+	width : 96%;
+	height : auto;
+	font-family : "맑은고딕", "굴림", sans-serif; 
+	font-size: 12px;
+	font-weight : bold;
+	color : gray;
+	border-top: 1px solid #00000033;
+	margin : 0px 5px;
+}
+
+.upload-img{	
+}
+
+.text-box{
+	width : 98%;
+	heihgt : auto; 
+	margin : 7px 2px;
+	padding-left: 5px;
+}
+
+.content{
+	width : 95%;
+	height : 20px;
+	margin: 4px 1px;
+}
+
+#pw{
+	width : 98%;
+	height : auto;
+	margin-top : 13px;
+	border-top: 1px solid #00000033;
+	padding: 1px 1px 3px 5px;
+}
+
+.pw-box{
+	width : 98%;
+	heihgt : auto; 
+	margin : 2px 2px;
+}
+
+/* ------ 버튼(component)------------------------------------- */
+.form-btn{
+	margin-left: 12px;
+}
+
+.button{	
+	min-width: 105px;		
+	background: #ff572282;
+	display: inline-block;
+	text-align: center;  
+	padding: 3px 8px;	
+	border-radius: 4px;
+	cursor : pointer;	
+	text-decoration: none;
+	color : white;	
+	font-size: 14px;
+}

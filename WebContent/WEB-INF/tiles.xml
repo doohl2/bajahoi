@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"
+       "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+<tiles-definitions>
+<!-- 평래 -->		
+		<definition name="home1.index" template="/WEB-INF/views/inc/layout2Ht.jsp">   
+    <put-attribute name="main" value="/WEB-INF/views/home1/index.jsp" />
+ 	 </definition>
+	
+	
+<!-- 희택 -->		
+	  <definition name="Search.*" template="/WEB-INF/views/Category/inc/subcategorylayout.jsp">
+    <put-attribute name="header" value="/WEB-INF/views/inc/header.jsp" />
+    <put-attribute name="main" value="/WEB-INF/views/Search/{1}.jsp" />
+    <put-attribute name="footer" value="/WEB-INF/views/inc/footer.jsp" />
+  </definition>
+  
+  
+  <definition name="Category.home.*" template="/WEB-INF/views/Category/inc/categorylayout.jsp">
+    <put-attribute name="header" value="/WEB-INF/views/inc/header.jsp" />
+    <put-attribute name="main" value="/WEB-INF/views/Category/home/{1}.jsp" />
+  </definition>
+  
+    <definition name="Category.Subcategory.*" template="/WEB-INF/views/Category/inc/subcategorylayout.jsp">
+    <put-attribute name="header" value="/WEB-INF/views/inc/header.jsp" />
+    <put-attribute name="main" value="/WEB-INF/views/Category/Subcategory/{1}.jsp" />
+    <put-attribute name="footer" value="/WEB-INF/views/inc/footer.jsp" />
+  </definition>
+ 
+  
+  <definition name="Menu.*" template="/WEB-INF/views/inc/layoutHt.jsp">
+    <put-attribute name="main" value="/WEB-INF/views/Menu/{1}.jsp" />
+  </definition>
+
+
+<!-- 상진  --> 
+<definition name="Category.productInfo.seller.*.*" template="/WEB-INF/views/Category/inc/subproductlayout.jsp">
+				 <put-attribute name="header" value="/WEB-INF/views/inc/header.jsp" />
+		<put-attribute name="main"
+			value="/WEB-INF/views/Category/productInfo/seller/{1}/{2}.jsp" />
+			<put-attribute name="footer" value="/WEB-INF/views/inc/footer.jsp" />
+</definition>
+
+<definition name="Category.productInfo.*" template="/WEB-INF/views/Category/inc/subproductlayout.jsp">
+		 <put-attribute name="header" value="/WEB-INF/views/inc/header.jsp" />
+		<put-attribute name="main"
+			value="/WEB-INF/views/Category/productInfo/{1}.jsp" />
+		<put-attribute name="footer" value="/WEB-INF/views/inc/footer.jsp" />
+</definition>
+  
+  
+<!-- 두형 -->
+	
+  <definition name="member.info.*" template="/WEB-INF/views/inc/layout.jsp">
+    <put-attribute name="header" value="/WEB-INF/views/inc/header.jsp" />
+    <put-attribute name="main" value="/WEB-INF/views/member/info/{1}.jsp" />
+    <put-attribute name="footer" value="/WEB-INF/views/inc/footer.jsp" />
+</definition>
+
+ <definition name="member.purchase.*.*" template="/WEB-INF/views/inc/layout.jsp">
+    <put-attribute name="header" value="/WEB-INF/views/inc/header.jsp" />
+    <put-attribute name="main" value="/WEB-INF/views/member/purchase/{1}/{2}.jsp" />
+    <put-attribute name="footer" value="/WEB-INF/views/inc/footer.jsp" />
+</definition>
+
+ <definition name="member.purchase.sale.*" template="/WEB-INF/views/inc/layout.jsp">
+    <put-attribute name="header" value="/WEB-INF/views/inc/header.jsp" />
+    <put-attribute name="main" value="/WEB-INF/views/member/sale/{1}.jsp" />
+    <put-attribute name="footer" value="/WEB-INF/views/inc/footer.jsp" />
+</definition>
+
+ <definition name="member.*.*" template="/WEB-INF/views/inc/layout.jsp">
+    <put-attribute name="header" value="/WEB-INF/views/inc/header.jsp" />
+    <put-attribute name="main" value="/WEB-INF/views/member/{1}/{2}.jsp" />
+    <put-attribute name="footer" value="/WEB-INF/views/inc/footer.jsp" />
+</definition>
+</tiles-definitions>

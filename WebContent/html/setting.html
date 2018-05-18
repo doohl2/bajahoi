@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link href="../css/styledh.css" type="text/css" rel="stylesheet" />
+</head>
+<body>
+	<!-- --------------------------header--------------------------- -->
+			<h1 class="hidden">바자회</h1>
+	<section>
+			<h1 class="hidden">계정설정</h1>
+		<header>
+			<!-- -----navigation-------- -->
+			<nav class="navbar bg-dark fixed-top">
+				<h1 class="hidden">헤더</h1>
+				<div class="container">
+					<a class="navbar-brand" href="#">BAJAHOI</a>
+       			 
+       			 <div>
+       			 	<h2 class="hidden">검색</h2>
+	       			 <button class="navbar-toggler" type="button">
+	        	 		<span> <img src="../images/search.png"> </span>
+	       			 </button>
+	       			 
+	       			 <h2 class="hidden">찜</h2>
+	       			 <button class="navbar-toggler" type="button">
+	        	 		<span> <img src="../images/like.png" alt="찜"> </span>
+	       			 </button>
+	       			 
+	       			 <h2 class="hidden">메뉴</h2>
+					 <button class="navbar-toggler margin-right" type="button">
+	        	 		<span> <img src="../images/menu.png"> </span>
+	       			 </button>
+       			 </div>
+        		</div>
+			</nav>
+		</header>
+		
+		  <!-- Page Content -->
+		      <div class="container">
+
+      <!-- Page Heading -->
+								
+      <div class="row">
+	      <div class="col">
+			<form action="" method="post">
+			
+	      <h1 class="footer-margin ">계정
+	        <small>설정하기</small>
+	      </h1>	
+	      							
+			<div class="padding-lr margin-top-small-space">
+	  		<strong class="text-normal text-highlight">나의 계정</strong>
+	  		</div>
+	  		
+	      	<div class="padding-lr margin-top-small-space text-center">
+	  		 <div style="margin-bottom: -20px; margin-right: -40px;">
+	  		 <label for="upload"> 
+	  		 <img src="../images/add.svg" alt="add" style="z-index: 1;">
+	  		 </label> 
+	  		 </div>
+ 				<label for="upload"> 
+	  		 <img class="acc-img" src="../images/acc.svg" alt="upload"> 
+	  		 <input type="file" id="upload" style="display:none; z-index: 2;"> 
+	  		  	</label> 
+	     	</div>
+	     	
+	     	<div class="padding-lr margin-top-small-space">
+	  			<strong class="text-normal text-highlight"><label for="name">이름</label></strong>
+	  		</div>
+	     	<div class="padding-lr margin-top-small-space">
+	     		<input type="text" class="acc-text-area" id="name" autofocus required>
+	     	</div>
+	     	
+	     	
+	     	<div class="padding-lr margin-top-small-space">
+	  			<strong class="text-normal text-highlight"><label for="nickname">닉네임&기업명</label></strong>
+	  		</div>
+	     	<div class="padding-lr margin-top-small-space">
+		     	<div class="padding-lr margin-top-small-space">
+		     		<label class="text-normal"><input type="radio" value="개인" name="소속" checked>개인</label>
+	 				<label class="text-normal"><input type="radio" value="기업" name="소속">기업</label>
+	 			 </div>
+	     			<input type="text" class="acc-text-area" id="nickname" autofocus required>
+	     	</div>
+	     	
+ 			 
+	     	<div class="padding-lr margin-top-small-space">
+	  			<strong class="text-normal text-highlight"><label for="email">이메일</label></strong>
+	  		</div>
+	     	<div class="padding-lr margin-top-small-space">
+	     		<input type="text" class="acc-text-area" id="email" style="width:45.5%;" autofocus required> @ <select class="acc-text-area" id="email" style="padding-left:0 !important; width:45.5%;" autofocus required> 
+	     		<option> 직접입력 </option>
+	     		<option> naver.com </option>
+	     		<option> gmail.com </option>
+	     		<option> yahoo.com </option>
+	     		<option> daum.net </option>	     		
+  				<option> nate.com </option>	     		
+	     		</select>
+	     	</div>
+	     	
+	     	<div class="padding-lr margin-top-small-space">
+	  			<strong class="text-normal text-highlight"><label for="phone">연락가능번호</label></strong>
+	  		</div>
+	     	<div class="padding-lr margin-top-small-space">
+	     		<input type="tel" class="acc-text-area" id="phone" placeholder="'-' 제외하고 숫자만 입력하세요"  autofocus required>
+	     	</div>	
+	     	
+	     	<div class="padding-lr margin-top-small-space">
+	  			<strong class="text-normal text-highlight"><label for="name">주소</label></strong>
+	  		</div>
+	     	<div class="padding-lr margin-top-small-space">
+	     		<input type="text" class="acc-text-area margin-top-small-space-space" id="name" style="width:20%;"autofocus required> - <input type="text" class="acc-text-area margin-top-small-space-space" id="name" style="width:20%;"autofocus required>
+	     		<a> <button class="acc-text-area" style="width:30%;"> <span> 주소검색 &raquo; </span> </button></a>	
+	     		<input type="text" class="acc-text-area margin-top-small-space-space" id="name" placeholder="기본주소" autofocus required>
+	     		<input type="text" class="acc-text-area margin-top-small-space-space" id="name" placeholder="나머지주소" autofocus required>
+	     	</div>	
+	    
+	  		 	     	
+	     	<div class="padding-lr margin-top-small-space">
+	  			<strong class="text-normal text-highlight">비밀번호 변경</strong>
+	  		</div>
+
+	     	<div class="padding-lr margin-top-small-space">
+	  			<strong class="text-normal text-highlight">&nbsp;&nbsp;<label for="curpasswd">기존 비밀번호</label></strong>
+	  		</div>
+			<div class="padding-lr margin-top-small-space">
+	     		<input type="password" class="acc-text-area" id="currentpasswd" placeholder="영문과 숫자, 특수문자 조합 6~15자리 이내" autofocus required>
+	     	</div>
+	     	<div class="padding-lr margin-top-small-space">
+	  			<strong class="text-normal text-highlight">&nbsp;&nbsp;<label for="newpasswd">변경할 비밀번호</label></strong>
+	  		</div>
+			<div class="padding-lr margin-top-small-space">
+		     	<input type="password" class="acc-text-area" id="newpasswd" autofocus required>
+		     	<input type="password" class="acc-text-area margin-top-small-space-space" id="newpasswd" autofocus required>
+			</div>
+	     	<div class="padding-lr text-center flex-row margin-lr-no margin-top-space card-below">
+	     			<input type="submit" class="btn" value="저장"> 
+		     		<input type="reset" class="btn" value="취소"> 
+	     	</div>
+	     	
+
+	     		</form>
+		   </div>
+       </div> 
+ 	 </div>
+      <!-- /.row -->
+         
+		   <!-- Footer -->
+	<footer class="footer-padding-bottom">
+	 <h1 class="hidden">바자회 관련</h1>
+		<div class="footer-href bg-white">
+			<div class="footer-href-content">
+			<h2 class="hidden">정보</h2>
+              <a class="m-0 text-center text-white" href="#"> 
+              바자회 정보
+              </a>
+			</div>
+			
+			<div class="footer-href-content">
+			<h2 class="hidden">배송정보</h2>
+              <a class="m-0 text-center text-white" href="#"> 
+              배송정보
+              </a>
+            </div>
+
+			<div class="footer-href-content">
+			<h2 class="hidden">FAQ</h2>
+              <a class="m-0 text-center text-white" href="#"> 
+              FAQ
+              </a>
+            </div>
+            
+			<div class="footer-href-content">
+			<h2 class="hidden">교환 및 환불</h2>
+              <a class="m-0 text-center text-white" href="#"> 
+              교환 및 환불
+              </a>
+			</div>
+		</div>     
+		   
+        <div class="container">
+        	 <h2 class="hidden">바자회 홈페이지 정보</h2>
+        <p class="m-0 text-center text-white"> 이용약관	개인정보취급 </p>
+        <p class="m-0 text-center text-white"> 고객센터 : 10:00~18:00(토요일 및 공휴일 휴무) </p>
+        <p class="m-0 text-center text-white"> 전화번호 / 이메일 / 주소 bajah@google.com/1577-080 </p>
+      </div>
+      <!-- /.container -->
+    </footer>
+	</section>
+</body>
+</html>

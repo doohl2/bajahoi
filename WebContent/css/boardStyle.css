@@ -1,0 +1,320 @@
+@charset "utf-8";
+/* 확장자 css는 html와 다르다 */
+/* 첫번째방
+-height/ min-height
+-reset : body(margin)
+두번째방
+-height/min-height : 100%,inherit
+-박스를 정렬: width 고정 ->margin left/right/ center
+- margin/ padding/ border
+
+세번째방
+-floating.clear-fix */
+h1{
+   margin: 0px;
+}
+
+ul{
+   padding: 0px;
+   margin: 0px;	
+}
+
+li{
+   margin: 0px;
+   display: block;
+}
+
+a{
+	text-decoration: none;
+	color: inherit;
+}
+/* ------reset------------------------ */
+	#all{
+		width:344px;
+		height:640px;
+		background: #F0F3F4;
+		position:relative;
+		overflow: overlay;
+	}
+	
+	
+#hidden{
+	visibility: hidden;
+}	
+	.scroll{
+	/* overflow: scroll; */
+}
+	
+	#logobar{
+	width:100%;
+	height:55px;
+	background-color:#85C1E9;
+	
+	}
+		#logobar > ul > li{
+		display: inline-block; 
+		overflow: auto;
+		}
+		
+		#logobar > ul > li.first-child{
+		padding-left: 0px !important;
+		padding-right:15px;
+		background: none !important;
+		
+			
+		}
+	
+		.logo{
+		
+		float: right;
+		}  
+	
+	.container{/* 루트 컨테이너가 지정된 영역의 특성을 정의한다. */
+   display: inline-block;
+}
+	/* ---------------------------------------------- */
+	.btn{
+			background: #759d2a;
+			color: #ffffff;
+			/* display:inline-block;
+			text-align:center; */
+    		margin-top:0px;
+    		margin-left:45px;
+    		
+			border-radius: 4px;
+			float: right;
+	
+		}
+	.btn1{
+			background: #759d2a;
+			color: #ffffff;
+			/* display:inline-block;
+			text-align:center; */
+    		margin-top:0px;
+    		margin-left:45px;
+    		
+			border-radius: 4px;
+			float:left;
+	
+		}
+
+	.btn-default{
+		border: 0px;
+		cursor: pointer;
+	}
+	/* ---------------------------------------------- */
+	
+	.cate{
+		width:100%;
+		height:45px;
+		float:inherit;
+		/* background-color: gray; */
+		border-bottom:3px solid gray;
+		margin-top:0px;
+		text-align: left;
+		
+	}
+	
+	.list{
+	
+	font-size: 15px;
+	}
+	
+	.cate > ul{
+		border-top: 1px solid #000000;
+		/* border-left:2px solid #797D7F;  */
+		border-right: 2px solid #797D7F;
+		
+	}
+	
+	.cate > ul > li:first-child{
+		background:;
+		display: inline; 
+		text-indent:10px;
+		
+	}
+	
+	
+	.cate > ul > li{
+		text-indent:10px;
+		background: url("../images/bg-title-sp.png")no-repeat left center;
+		display: inline; 
+		
+	}
+	
+	
+	#main{
+	overflow: hidden;
+	}
+	.things{
+	height:400px;
+	}
+	#board{
+	}
+	
+	#make{
+	width:100%;
+	height:360px;
+	/* border: 2px solid blue; */
+	margin-bottom: 20px;
+	background: #F0F3F4;
+	
+	}
+	
+	#make > ul > li{
+	display: inline;
+	}
+	
+	#made{
+	width:100%;
+	height:380px;
+	/* border: 2px solid blue; */
+	margin-bottom: 20px;
+	}
+	#made > ul > li{
+	display:block
+	}
+	
+	/* ------------------------------------------------- */
+	.table{
+		/* width:100%; */
+		border-collapse: collapse; 
+		/* 테두리있으면 합치기 */
+	}
+	
+	.tunder{
+		text-indent: 8px;
+		font-size: 11px;
+	}
+	
+	tr.bottom-border {
+  		border-bottom: 1px solid #5D6D7E;
+	}
+	
+	
+	
+	.tunder td{
+		background: url("../images/bg-title-sp.png")no-repeat left center;
+	}
+	
+/* 	.table tr tunder,
+	.table .tr .tunder{
+	
+		border-bottom: 1px solid #000000;
+	} */
+	
+	
+	.talbe tr,
+	.table .tr{
+		height: 30px;
+		line-height:30px;
+	}
+	
+	.table td,
+	.table .td{
+		
+		/* min-width: 50px; */
+		
+		/* text-align: center; */
+		/* border-bottom:1px solid #e9e9e9; */
+		
+	}
+	
+	
+	.wnum{
+		text-align: center;
+	}
+	
+	.wTitle{
+		text-overflow: ellipsis;
+		min-width:344px;
+		overflow: hidden;
+		text-align: left;
+	}
+	
+	.w1{
+		min-width: 50px;
+	}
+	.w2{
+		min-width: 50px;
+	}
+	.w3{
+		min-width: 70px;
+	}
+	.w4{
+		min-width: 50px;
+	}
+	
+	/* -------------------------------------------------  */
+	.list_number{
+		padding-top:10px; 
+		text-align:center;
+		display: inline-flex;
+	}
+    .list_n_menu {
+	    padding:3px; 
+	    MARGIN:3px; 
+	    TEXT-ALIGN: center
+    }
+    .list_n_menu A {
+	    padding:5px 8px 4px 8px; 
+	    MARGIN: 2px; 
+	    BORDER: #ccc 1px solid; 
+	    COLOR: #999; 
+		EXT-DECORATION: none
+	}
+    .list_n_menu A:hover {
+	    BORDER:#999 1px solid; 
+	    COLOR: #666;
+    }
+    .list_n_menu A:active {
+	    BORDER:#999 1px solid; 
+	    COLOR: #666;
+    }
+    .list_n_menu .current {
+	    BORDER: #117bff 1px solid; 
+	    padding:5px 8px 4px 8px; 
+	    FONT-WEIGHT: bold; 
+	    MARGIN: 2px; 
+	    COLOR: #036cb4;
+    }
+    .list_n_menu .disabled {
+	    BORDER: #eee 1px solid; 
+	    /* padding:5px 8px 4px 8px; */ 
+	    MARGIN: 2px; 
+	    COLOR: #ddd;
+    }
+	
+	
+	
+	
+	/* -------------------------------------------------- */
+
+	/* ------------------------------------------------- */
+	
+	.wrap{
+	position:relative;
+	width:344px;
+	height: 56px;
+	
+	}
+	
+	.down{
+		display:flex;
+		margin-bottom:5px;
+	}
+	
+	.underbar{
+		/* position:absolute;
+		height:35px; */
+	}
+	
+	.footman{
+	position:inherit;
+    bottom:0;
+	width:100%;
+	height:55px;
+	background-color:black;
+	color: #ffffff;
+	font-size:10px;
+	}

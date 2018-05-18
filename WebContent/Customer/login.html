@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+
+<link href="../css/login.css" type="text/css" rel="stylesheet">
+<style>
+body {
+	font-family: "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+	font-size: 1rem;
+	color: #212529;
+	padding-top: 54px;
+	background: #F5F5F6;
+	cursor: auto;
+}
+
+.login-btn {
+	border: none;
+	font-size: 20px;
+	height: 2rem;
+	width: 6rem;
+	color: white;
+	font-weight: 900;
+	background: #770000;
+	border-radius: 10%;
+	cursor: pointer;
+}
+
+h1 {
+	font-size: 2.5rem;
+	font-weight: 500;
+	line-height: 1.2;
+	margin-bottom: 1.5rem !important;
+	margin-top: 1.5rem !important;
+}
+</style>
+
+
+
+
+	<div class="head">
+		<h1>이메일로 로그인</h1>
+	</div>
+	<div class="login-checkbox">
+		<form>
+			<label><input type="checkbox" name="로그인 기억하기">로그인
+				기억하기</label>
+		</form>
+	</div>
+
+	<div class="login-input">
+		<div>
+			<p>ID(E-mail)</p>
+			<input class="input-box" type="email" name="emailId"
+				placeholder="이메일을 입력해주세요." />
+		</div>
+		<div>
+			<p>Password</p>
+			<input class="input-box" type="password" name="password"
+				placeholder="비밀번호를 입력해주세요." />
+		</div>
+	</div>
+
+	<div class="btn">
+		<form>
+			<a href=""><input class="login-btn" type="submit" value="로그인"></a>
+		</form>
+		<nav>
+			<a href="" class="text-link"><p>아이디.비밀번호 찾기</p></a>
+			<p>|</p>
+			<a href="" class="text-link"><p>무료회원가입</p></a>
+		</nav>
+	</div>
+
+</body>
+</html>
